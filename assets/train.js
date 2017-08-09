@@ -45,7 +45,7 @@ database.ref().on("child_added", function(snapshot) {
 
   var minutesTilTrain = frequency - remainder;
 
-  var nextTrain = moment().add(moment(minutesTilTrain, "minutes"));
+  var nextTrain = moment().add(minutesTilTrain, "m").format("hh:mm A");
 
   console.log(nextTrain);
 
