@@ -60,7 +60,7 @@ database.ref().on("child_added", function(snapshot) {
       snapshot.val().frequency +
       "</td><td>" +
       minutesTilTrain +
-      "</td></td>" + 
+      "</td><td>" + 
       nextTrain +
       "</td></tr>"
   );
